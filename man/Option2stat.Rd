@@ -34,5 +34,6 @@ number of options employed in this approximation, the accuracy of the
 result will quickly decrease with N.
 }
 \examples{
+Option2stat(DAX$XC,DAX$C,DAX$XP,DAX$P)
 
 }
