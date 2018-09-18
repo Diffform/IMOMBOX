@@ -9,7 +9,7 @@ fact(x, n)
 \arguments{
 \item{x}{upper numebr}
 
-\item{n}{öower number
+\item{n}{lower number
 Quaksi}
 }
 \value{
