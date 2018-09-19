@@ -34,8 +34,8 @@ Option2stat <- function(XC,C,XP,P,S0,df,N){
     idxC <- na.omit(match(h,XC))
     YY <- C[idxC]-P[idxP]
     regcoef<-coef(lm(YY~XC[idxC]))
-    S0<-regcoef[1]
-    df<-regcoef[2]
+    S0 <- regcoef[1]
+    df <- -regcoef[2]
   }
 
   M <- Option2price(XC,C,XP,P,S0,df,N)*1/df
