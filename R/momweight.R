@@ -1,6 +1,6 @@
 #' @title Calculate weights for ...
 #'
-#' @description \code{momweight} In BKM03, any contract on $R^n=[ln(ST/S0)^N]$ can be replicated using bond,
+#' @description \code{momweight} In BKM03, any contract on $R^n=ln(ST/S0)^N$ can be replicated using bond,
 #'  the underlying, puts and calls. The function MOMWEIGHT(K,S0,N) yields the
 #'  required weights in the Put and Call options for any strike level X, spot
 #'  asset price S0 and contract exponent N.
