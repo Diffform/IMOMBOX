@@ -7,10 +7,9 @@
 fact(x, n)
 }
 \arguments{
-\item{x}{upper numebr}
+\item{x}{upper number}
 
-\item{n}{lower number
-Quaksi}
+\item{n}{lower number}
 }
 \value{
 Factorial

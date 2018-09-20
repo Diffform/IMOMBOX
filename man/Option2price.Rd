@@ -31,6 +31,7 @@ Vector of N (4) first standardized moments
 N powers of the asset's future return $R^N=log(ST/S0)^N$.
 }
 \examples{
+data(DAX)
 Option2price(DAX$XC,DAX$C,DAX$XP,DAX$P,1000,0.99)
 Option2price(DAX$XC,DAX$C,DAX$XP,DAX$P,1000,0.99,6) # The first 6 contract prices
 

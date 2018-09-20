@@ -26,7 +26,7 @@ The example data is provided in the originally matlab package and contains obser
 require(IMOMBOX)
 #> Loading required package: IMOMBOX
 data(DAX)
-# For the calculation of 
+# Only use Strikes and prices, have R calculate S0 and df
 Option2price(DAX$XC,DAX$C,DAX$XP,DAX$P)
 #> Estimated spot price S0: 8676.151  and estimated discount factor df: 0.9999221
 #> [1] -0.0008807785  0.0019554410 -0.0001197590  0.0000228430
