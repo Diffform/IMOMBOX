@@ -3,7 +3,7 @@ Title: Calculate Bakshi/Kapadia/Madan moments of option implied return distribut
 Version: 0.0.0.9000
 Authors@R: c(person("Matthias", "Held", email = "matthias.held@whu.edu", role = c("aut"), comment = "Original developer of matlab package."),
     person("Alex", "Weissensteiner", email = "alex.weissensteiner@unibz.it", role = c("aut"), comment = "Translation from Matlab to R."),
-    person("Sebastian", "StÃ¶ckl", email = "sebastian.stoeckl@uni.li", role = c("aut", "cre")))
+    person("Sebastian", "Stöckl", email = "sebastian.stoeckl@uni.li", role = c("aut", "cre")))
 Description: R port of Matlab implementation of the Bakshi/Kapadia/Madan approach to the parameter-free elicitation of option implied return distribution moments by Matthias Held (matthias.held@whu.edu).
 Depends: R (>= 3.4.4), methods, stats
 License: What license is it under?
@@ -12,3 +12,4 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
 Import: methods
+Suggests: testthat
