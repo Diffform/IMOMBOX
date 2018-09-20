@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/diffform/IMOMBOX.svg?branch=master)](https://travis-ci.org/diffform/IMOMBOX)
+[![Travis-CI Build Status](https://api.travis-ci.org/Diffform/IMOMBOX.svg?branch=master)](https://travis-ci.org/diffform/IMOMBOX)
 
 IMOMBOX
 =======
