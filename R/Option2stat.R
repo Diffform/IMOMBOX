@@ -19,6 +19,7 @@
 #' @return Vector of N (4) first standardized moments
 #'
 #' @examples
+#' data(DAX)
 #' Option2stat(DAX$XC,DAX$C,DAX$XP,DAX$P)
 #'
 #' @importFrom methods hasArg
@@ -26,12 +27,16 @@
 #'
 #'@export
 Option2stat <- function(XC,C,XP,P,S0,df,N){
+  # if N is not provided, set it to 4
   if(!hasArg(N)){N<-4}
+  # if either df or S0 is not provided use put-call parity to estimate S and exp(-r*tau)=df
+  # c-p=S-I-K*exp(-r*tau)
   if(!hasArg(df)|!hasArg(S0)){
     h <- intersect(XC,XP)
     if(length(h)==0){stop("to calculate S0 and df we need overlapping strikes for puts and calls to use put-call-parity")}
     idxP <- na.omit(match(h,XP))
     idxC <- na.omit(match(h,XC))
+    if (length(c(idxP,idxC))<=2){stop("Please provide discount factor and/or spot asset price.")}
     YY <- C[idxC]-P[idxP]
     regcoef<-coef(lm(YY~XC[idxC]))
     S0 <- regcoef[1]

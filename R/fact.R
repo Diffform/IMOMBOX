@@ -2,9 +2,9 @@
 #'
 #' @description \code{fact} ...
 #'
-#' @param x upper numebr
+#' @param x upper number
 #' @param n lower number
-#' Quaksi
+#'
 #'
 #' @return Factorial
 #'

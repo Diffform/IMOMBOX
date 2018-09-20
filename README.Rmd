@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# IMOMBOX
+
+This is an `R` implementation of the original Matlab code of Matthias Held ("matthias.held@whu.edu") to calculate Bakshi/Kapadia/Madan moments of option implied return distribution.
+
+**CURRENTLY THIS PACKAGE IS UNDER HEAVY DEVELOPMENT AND NOT ALL THE FUNCTIONS HAVE YET BEEN IMPLEMENTED TO THEIR FULL EXTENT!**
+
+## Installation
+
+You can install IMOMBOX from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("diffform/IMOMBOX")
+```
+
+## Example
+
+The example data is provided in the  originally matlab package and contains observations of call and put option prices from `2013-09-20` written on the German DAX index with a maturity of `2013-10-18` (28 days to maturity). Based on these options we calculate risk neutral prices for the first four moment contracts, i.e. the contracts that pay $R^1$, $R^2$, $R^3$ and $R^4$.
+
+```{r example1}
+require(IMOMBOX)
+data(DAX)
+# For the calculation of 
+Option2price(DAX$XC,DAX$C,DAX$XP,DAX$P)
+```
+
+So, we find that an option that pays $R^2$ in 28 days from now commands a price of `r round(Option2price(DAX$XC,DAX$C,DAX$XP,DAX$P)[2],4)`.
+
