@@ -12,6 +12,9 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis-CI Build Status](https://travis-ci.org/diffform/IMOMBOX.svg?branch=master)](https://travis-ci.org/diffform/IMOMBOX)
+
+
 # IMOMBOX
 
 This is an `R` implementation of the original Matlab code of Matthias Held ("matthias.held@whu.edu") to calculate Bakshi/Kapadia/Madan moments of option implied return distribution.
