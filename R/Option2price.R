@@ -25,6 +25,11 @@
 #'
 #'@export
 Option2price <- function(XC,C,XP,P,S0,df,N){
+  ### Do sorting (or numerical integration fails)
+  sXC <- order(XC)
+  XC <- XC[sXC]; C <- C[sXC]
+  sXP <- order(XP)
+  XP <- XP[sXP]; P <- P[sXP]
   # if N is not provided, set it to 4
   if(!hasArg(N)){N<-4}
   # if either df or S0 is not provided use put-call parity to estimate S and exp(-r*tau)=df
