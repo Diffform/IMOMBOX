@@ -45,7 +45,7 @@ Option2stat <- function(XC,C,XP,P,S0,df,N){
 
   M <- Option2price(XC,C,XP,P,S0,df,N)*1/df
 
-  out <- rep(NA,N)
+  out <- rep(NA,N); names(out) <- c(outer("mom",1:N,paste0))
   for(n in seq(N)){
     out[n]<-sum(fact(0:n,n)*(-1)^(0:n)*c(M[n-(0:(n-1))], 1)*M[1]^(0:n))
   }
