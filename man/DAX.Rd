@@ -4,7 +4,8 @@
 \name{DAX}
 \alias{DAX}
 \title{Examples Data from Matlab-IMOMBOX}
-\format{List containing 7 variables
+\format{
+List containing 7 variables
 \describe{
 \item{XC}{(numeric) - Strike prices of call options}
 \item{C}{(numeric) - Prices (premium) of call options}
@@ -13,7 +14,19 @@
 \item{date}{(string) - Observation date}
 \item{maturity}{(string) - Maturity date for put and call options}
 \item{daysToMaturity}{(numeric) - Days to maturity for put and call options.}
-}}
+}
+
+List containing 7 variables
+\describe{
+\item{XC}{(numeric) - Strike prices of call options}
+\item{C}{(numeric) - Prices (premium) of call options}
+\item{XP}{(numeric) - Strike prices of put options}
+\item{P}{(numeric) - Prices (premium) of put options}
+\item{date}{(string) - Observation date}
+\item{maturity}{(string) - Maturity date for put and call options}
+\item{daysToMaturity}{(numeric) - Days to maturity for put and call options.}
+}
+}
 \source{
 Matthias Held Matlab IMOMBOX
 
